@@ -16,7 +16,7 @@ class CounterButton extends React.Component{
     return (
       <View>
         <Text>{this.state.counter}</Text>
-        <Button title = {'Click me!'} onPress = {this.clickHandler}/>
+        <Button title = {'Click me!'} onPress = {this.clickHandler}/> 
       </View> 
     );
   }
@@ -26,6 +26,9 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <CounterButton />
+        <CounterButton />
+        <CounterButton />
         <CounterButton />
       </View>
     );
